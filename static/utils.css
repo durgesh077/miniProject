@@ -1,0 +1,31 @@
+:root{
+}
+#_code{
+	--bgcolor: #3f3f3f;
+	background-color: var(--bgcolor);
+	color: white;
+	caret-color: blue;
+	font-size: 1.7em;
+	width: 70vw;
+	margin: auto;
+	min-height: 30vh;
+	height: 70vh;
+	padding: 2.4em;
+	display: block;
+	margin-top: 2.4em;
+	border: 4px groove black;
+	border-radius: 4px;
+}
+#_submit{
+	/*background-color: yellow;*/
+}
+#_submit button{
+	outline: 2px solid black;
+	color: tomato;
+	padding: 3px;
+	font-size: 1.3em;
+	margin: 9px auto;
+	display: block;
+	height: 3em;
+	width: 5em;
+}
