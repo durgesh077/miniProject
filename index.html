@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Run code</title>
-		<link type="text/css" rel="stylesheet" href="utils.css">
-	</head>
-	<body>
-		<form action="/run" method="post" >
-		<textarea id="_code" name="code" ></textarea>
-		<div id="_submit">
-			<button type="submit">Run</button>
+
+<head>
+	<title>Run code</title>
+	<link type="text/css" rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+	<form id="_program" action="/run" method="post" onsubmit="getRes(this);return false">
+		<textarea id="_code" name="code" autofocus></textarea>
+		<div class="formWrapper">
+			<fieldset>
+				<legend>Input</legend>
+				<textarea class="_inout" name="input"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Output</legend>
+				<samp class="_inout _output" id="output"></samp>
+			</fieldset>
 		</div>
-		</form>
-	</body>
-	<script src="fn.js"></script>
+		<button id="_submit" type="submit">Run</button>
+	</form>
+</body>
+<script src="fn.js"></script>
+
 </html>

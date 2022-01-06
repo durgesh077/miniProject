@@ -1,8 +1,6 @@
-#include<iostream>
-#include<stdio.h>
+#include<bits/stdc++.h> 
+using namespace std;
 int main(){
- for(int i=0;i<10;i++){
-   printf("2 * %d = %d \n",i, 2*i);
+int a;
+for(int i=0;i<5;i++)cout << i << ' ';
 }
-}
-
